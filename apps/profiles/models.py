@@ -11,7 +11,7 @@ ACCOUNT_TYPE_CHOICES = (
 )
 
 
-class User(AbstractBaseUser):
+class User(AbstractBaseUser, IsDeletedModel):
     """
     Custom user model extending AbstractBaseUser.
 
